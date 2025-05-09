@@ -8,7 +8,8 @@ form.addEventListener('submit', function(event){
     const email = document.getElementById('email').value.trim();
     const senha = document.getElementById('senha').value.trim();
 
-    const emailRegex = /^[a-zA-Z0-0._]+@gmail\.com$/i;
+    const emailRegex = /^[a-zA-Z0-9._]+@gmail\.com$/i;
+
 
     if(!email || !senha){
         alert('Digite todos os dados');
